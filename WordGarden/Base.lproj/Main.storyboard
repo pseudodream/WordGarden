@@ -95,7 +95,13 @@
                                             <constraint firstAttribute="width" constant="34" id="u5j-Wv-IOb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="8C4-Fh-od6"/>
+                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="d5N-zt-Ipi"/>
+                                            <action selector="guessdLetterFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="5gR-tM-lwH"/>
+                                            <action selector="guessdLetterFieldChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="KjN-aN-SIL"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlX-J6-DW1">
                                         <rect key="frame" x="56" y="0.0" width="150" height="30"/>
